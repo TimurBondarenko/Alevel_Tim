@@ -12,10 +12,10 @@ public class Task2 {
 
     public static void wordCount() {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Введите слова одной строкой через пробел");
+        String sc1 = new String("" + sc.nextLine());
 
-        String input = sc.nextLine();
+        String input = sc1.trim();
         int count = 0;
 
         if (input.length() != 0) {
