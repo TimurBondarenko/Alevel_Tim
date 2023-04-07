@@ -9,7 +9,7 @@ public class Task1 {
         System.out.println("Введите слово на проверку ");
 
         Scanner scanner = new Scanner(System.in);
-        String word = scanner.next();
+        String word = scanner.nextLine();
 
         System.out.println(Task1.isPalindrome(word));
 
