@@ -8,8 +8,8 @@ public class Task1 {
 
         System.out.println("Введите слово на проверку ");
 
-        Scanner scanner1 = new Scanner(System.in);
-        String word = scanner1.next();
+        Scanner scanner = new Scanner(System.in);
+        String word = scanner.next();
 
         System.out.println(Task1.isPalindrome(word));
 
