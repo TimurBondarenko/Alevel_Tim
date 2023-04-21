@@ -7,12 +7,11 @@ public class Task2 {
 
         Pow operation = (int x, int y) -> {
             int num = 1;
-            for (int i = 1; i <= y; i ++){
+            for (int i = 1; i <= y; i++) {
                 num *= x;
             }
             return num;
         };
-
 
         System.out.println(operation.pow(5, 5));
     }
