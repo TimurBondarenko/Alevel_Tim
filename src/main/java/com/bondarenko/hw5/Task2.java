@@ -2,9 +2,11 @@ package com.bondarenko.hw5;
 
 public class Task2 {
 
+    //Покрыть тестами
+
     public static void main(String[] args) {
 
-        int[] arr = {9, 8, 7};
+        int[] arr = {9, 11, 7};
         System.out.println("Ответ " + aBoolean(arr));
 
     }

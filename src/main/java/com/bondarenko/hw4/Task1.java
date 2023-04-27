@@ -4,19 +4,24 @@ public class Task1 {
 
     public static void main(String[] args){
 
-       mathThings();
+        int[] array = new int[400];
+
+        mathThings(array);
+
+        average(array);
+
+        geometricMean(array);
 
     }
 
-    public static void mathThings(){
+    public static void mathThings(int[] array){
 
-        //Блок Рандом
-        long[] array = new long[400];
         for (int i = 0; i < array.length; i++) {
             array[i] = 1 + (int) (Math.random() * 10);
         }
-        //
+    }
 
+    public static double average(int[] array){
         //Среднее арифметическое элементов массива.
         double average = 0;
         if (array.length > 0)
@@ -27,11 +32,13 @@ public class Task1 {
             }
             average = sum / array.length;
         }
-        System.out.println("Среднее арифметическое элементов массива " + average);
-        //
+        //System.out.println("Среднее арифметическое элементов массива " + );
+        return average;
+    }
 
-        //Среднее геометрическое элементов массива.
-        double average2 = 0;
+    public static double geometricMean(int[] array){
+        //Среднее геометрическое
+        double geometric = 0;
         if (array.length > 0) {
 
             double sum = 1.0;
@@ -39,11 +46,9 @@ public class Task1 {
                 sum *= array[j];
             }
             sum = Math.pow(sum, 1.0 / (double) array.length);
-            average2 = sum;
+            geometric = sum;
         }
-        System.out.println("Среднее геометрическое элементов массива " + average2);
-        //
-
+        //System.out.println("Среднее геометрическое элементов массива " + );
+        return geometric;
     }
-
 }

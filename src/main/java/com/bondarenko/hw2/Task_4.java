@@ -1,7 +1,5 @@
 package com.bondarenko.hw2;
 
-import java.util.Scanner;
-
 public class Task_4 {
 
     public static void main(String[] args) {

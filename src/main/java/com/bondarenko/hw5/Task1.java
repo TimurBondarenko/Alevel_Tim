@@ -16,7 +16,7 @@ public class Task1 {
         int k = 1;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = a + 1;
+                array[i][j] = a + 1; //Заполнение массива
                 a++;
                 if (i % 2 != 0)
                     array[i][j] = k * (-1);

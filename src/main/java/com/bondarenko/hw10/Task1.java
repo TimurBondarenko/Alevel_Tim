@@ -11,7 +11,7 @@ public class Task1 {
         Student[] arrObject = new Student[]{student, aspirant};
         for (int i = 0; i < arrObject.length; i++) {
 
-            System.out.println(arrObject[i].getScholarship());
+            System.out.println(arrObject[i].getScholarship(5));
 
         }
 
@@ -23,9 +23,9 @@ class Student {
     String fitsName;
     String lastName;
     int group;
-    double averageMark = 5; //Средняя оценка
+    double averageMark; //Средняя оценка
 
-    public String getScholarship() {
+    public String getScholarship(int averageMark) {
 
         if (averageMark <= 0 || averageMark > 5) {
             return "Не верно указан средний бал. Укажите бал по 5 бальной системе. ";
@@ -41,7 +41,7 @@ class Aspirant extends Student {
 
     String scientificWork;
 
-    public String getScholarship() {
+    public String getScholarship(int averageMark) {
 
         if (averageMark <= 0 || averageMark > 5) {
             return "Не верно указан средний бал. Укажите бал по 5 бальной системе. ";

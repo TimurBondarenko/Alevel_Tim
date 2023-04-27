@@ -14,7 +14,7 @@ public class Task3 {
     public static void method(){
 
         int[][] arrey = {{1, 2, 3, 4},
-                {5, 6, 7, 8}};
+                         {5, 6, 7, 8}};
 
         int a = 1;
         int b = 2;
